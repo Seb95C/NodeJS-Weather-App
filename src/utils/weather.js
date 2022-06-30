@@ -11,7 +11,7 @@ const weather = (coordinates, callback) => {
         } else {
             const {current:data} = body
             callback(undefined, `${data.weather_descriptions[0]}. It is currently ${data.temperature} degrees. There is a ${data.precip * 100}% chance of rain.
-            There is a humidity of ${data.humidity} and a wind speed of ${data.wind_speed} km/h`)
+            There is a humidity of ${data.humidity}% and a wind speed of ${data.wind_speed} km/h`)
         }
     })
 }
