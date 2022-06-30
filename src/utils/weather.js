@@ -10,7 +10,7 @@ const weather = (coordinates, callback) => {
             callback('Wrong input for Weatherstack!', undefined)
         } else {
             const {current:data} = body
-            callback(undefined, `${data.weather_descriptions[0]}. It is currently ${data.temperature} degrees. There are ${data.precip} units of rain expected`)
+            callback(undefined, `${data.weather_descriptions[0]}. It is currently ${data.temperature} degrees. There is a ${data.precip * 100}% chance of rain`)
         }
     })
 }
