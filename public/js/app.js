@@ -1,5 +1,3 @@
-console.log('Client side JS file is loaded!')
-
 const searchLocation = (location) => {
 
     paragraphOne.textContent = 'Loading...'
